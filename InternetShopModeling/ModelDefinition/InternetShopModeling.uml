@@ -14,6 +14,10 @@
           LastKnownLocation="InternetShopModeling.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="911f664f-4673-450e-9fd6-9694ba418278">
+      <body>Диаграмма классов с точки зрения реализации программного кода</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -36,46 +40,17 @@
         name="Сustomer"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="5f4381d9-3e70-438e-86c4-b37998e9eee8"
-            isDerived="false"
-            sourceEndRoleName="Сustomer"
-            targetEndRoleName="Навигация по сайту"
-            isLeaf="false"
-            isAbstract="false">
-            <useCaseMoniker
-              Id="b11264f1-7037-4e3b-9e92-effd2a238a0e"
-              LastKnownName="Просмотреть товары"
+        <generalsInternal>
+          <generalization
+            Id="666223ba-4e3b-44e5-9e2f-a13374eb7d50"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="4a35bdff-f233-4d7d-99d1-5bede7c06353"
+              LastKnownName="Guest"
               LastKnownLocation="InternetShopModeling.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4f6be0b1-851f-45e8-a5b7-3c5002cccb19"
-                  name="Сustomer"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="0e9af142-cf2a-43d6-b031-fda47527ce58"
-                  name="Навигация по сайту"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
           <association
             Id="b811e2ce-a681-4fd0-bb0c-406b968446fc"
             isDerived="false"
@@ -144,6 +119,84 @@
                 <memberEnd
                   Id="6c0476ab-e6bb-456b-913c-252dd00b3fba"
                   name="Просмотреть статус заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="252b6eb5-650c-4ad0-9398-29cab1b4a221"
+            isDerived="false"
+            sourceEndRoleName="Сustomer"
+            targetEndRoleName="Зарегшистрироваться"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b5c17377-11e1-461c-9914-0486ffb6ce6c"
+              LastKnownName="Зарегшистрироваться"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a58aa142-dd38-42b5-9daa-ccd3de04a8d9"
+                  name="Сustomer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1c50a3e9-2133-450d-8c7c-dc628cdbe24d"
+                  name="Зарегшистрироваться"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="67c03af8-469a-413e-8672-5d1faa2813fd"
+            isDerived="false"
+            sourceEndRoleName="Сustomer"
+            targetEndRoleName="Просмотреть товары"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b11264f1-7037-4e3b-9e92-effd2a238a0e"
+              LastKnownName="Просмотреть товары"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dbee3e1b-de7c-4c03-b1da-4177cc104777"
+                  name="Сustomer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9caad4c3-b245-4765-9ac9-dbc943096398"
+                  name="Просмотреть товары"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -242,6 +295,45 @@
                 <memberEnd
                   Id="b6ee3e80-6de1-441f-a394-84b02f4674b8"
                   name="Просмотреть заказы"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="598078c8-8088-4733-96c6-e58f61dbf9a2"
+            isDerived="false"
+            sourceEndRoleName="Seller"
+            targetEndRoleName="Войти в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a9c846d5-41f7-4b99-83b4-ae547797ab6a"
+              LastKnownName="Войти в систему"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4c31e4da-47cf-4e1e-b4ab-836e24559fc5"
+                  name="Seller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1542e7ec-8865-4abc-8b48-f6559aa761bb"
+                  name="Войти в систему"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
@@ -467,6 +559,13 @@
               LastKnownName="Удалить товар"
               LastKnownLocation="InternetShopModeling.uml" />
           </include>
+          <include
+            Id="92d6f223-b85f-4790-be33-8f957057f22f">
+            <useCaseMoniker
+              Id="42670e74-5769-42a2-a07e-2f2facd4f27c"
+              LastKnownName="Редактировать категории"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
         </additions>
       </useCase>
     </packageHasNamedElement>
@@ -513,11 +612,11 @@
         isLeaf="false">
         <generalsInternal>
           <generalization
-            Id="487dd5ee-9253-4da3-83d3-cc9b73608542"
+            Id="eb13a4d4-5352-4d3f-b0e9-18c7ef8970ac"
             isSubstitutable="false">
             <actorMoniker
-              Id="6ea9dfab-7cc1-4eaf-8bdd-eb8636cb6363"
-              LastKnownName="User"
+              Id="a1fb541e-e698-4119-8f44-6447efb6aa56"
+              LastKnownName="Seller"
               LastKnownLocation="InternetShopModeling.uml" />
           </generalization>
         </generalsInternal>
@@ -738,6 +837,1356 @@
         name="Войти в систему"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="29a7e596-b0a1-44a1-a382-f28f325501c3"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="b2317c4c-b26e-4319-80c3-da4907fecb14"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="23504c01-51d2-4c73-9f5c-64a90b470746"
+            name="Contacts"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cedf5153-9d99-4c8f-b720-86cbec3c708b"
+        name="SellerAccount"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7f0cb011-2c9c-43df-80e6-ce7f020189c9"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d5158e5b-5467-401b-8dca-545f8b5852b2"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ad26e6c0-8561-4054-88c7-da0b8f227b4a"
+            name="Administrator"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8bd8ebc5-810a-4039-867a-ea6c116fc16e"
+            name="SessionID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ae5fb97c-0580-4cb0-a25d-79f8661f5171"
+                LastKnownName="Guid"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1d74ff06-ff82-4d58-9a39-bccc7771ab32"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e3629393-ee1b-497b-8b9e-0c352b92feac"
+            isDerived="false"
+            sourceEndRoleName="Product"
+            targetEndRoleName="ParameterValue"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="178690c1-f20f-4c25-bc88-46879b8e5c31"
+              LastKnownName="ParameterValue"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="678b667d-4bb4-4d18-b6b2-1349869ccc6e"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58d376a2-cdb4-498e-96c5-b70d9af19743"
+                  name="ParameterValue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="72b4c1d0-a065-455f-8e22-1602b8dfad99"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="305581a6-f6b3-4d2c-9fe6-004c2da6d6f5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3b8968de-f8f8-491f-a49d-9d002d4aa623"
+            name="Article"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="303987d9-229a-4949-9758-8c10f3063fff"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="984069ef-0eb9-470a-b7af-cbc47adbe2d9"
+            name="Price"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a75377ba-a7d6-4dd3-b603-b75c5c8bda77"
+                LastKnownName="Money"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="612f455b-c1ef-4004-9adc-b8957d239d16"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a889c7b6-ea48-4281-ae68-4a575b7e63fc"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1e286a42-ae4e-4717-8514-a48ba2f3260a"
+        name="Category"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="54751c34-04bc-49c1-aef1-17eaeccf9696"
+            isDerived="false"
+            sourceEndRoleName="Category"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1d74ff06-ff82-4d58-9a39-bccc7771ab32"
+              LastKnownName="Product"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efb838e4-b317-4525-ae95-aa1b19bb399d"
+                  name="Category"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98f5f6fe-8721-40be-a57e-3b14bc2c28f7"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="65d2e5f3-0535-4d8a-ad6e-70c6613261a9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="204881bf-ba76-4bf9-9978-d7bd5daef872"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1976b9e8-3c26-476a-b9a1-727599098a2f"
+            isDerived="false"
+            sourceEndRoleName="Category"
+            targetEndRoleName="Category"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1e286a42-ae4e-4717-8514-a48ba2f3260a"
+              LastKnownName="Category"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7a9590c-efc2-4cdc-a4b2-d6951da910b0"
+                  name="Category"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8624b9d1-ce2b-4c76-a7fd-f62b07f7cf7f"
+                  name="Category"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5e402d42-267d-4116-821d-6fd67d495011"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e9443bf7-fe12-49cb-b20a-fa79ad39d784"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cac802e3-7ef6-4783-9c7a-f7c6da02fe41"
+            isDerived="false"
+            sourceEndRoleName="Category"
+            targetEndRoleName="Parameter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4fd39686-9c64-41fd-9b28-0b06d8f71917"
+              LastKnownName="Parameter"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c3dd30d-aa40-4de2-85f4-6b78abe11d6f"
+                  name="Category"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f772fadf-20d8-4769-98c5-23ad280d2428"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="73880e33-f6be-4173-b7b3-75d4b98a0546"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="410ba4d7-5665-447a-834c-08dd46ee0b94"
+                  name="Parameter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="066822d1-b2d0-4f00-8c60-a0d7bfe94847"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9d1cafe0-3739-43af-a3d2-81c64b14fa5a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a57f79d5-eb07-48c7-ac0c-5ca192e3281f"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="42670e74-5769-42a2-a07e-2f2facd4f27c"
+        name="Редактировать категории"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d1de26d-e8ea-46aa-8ac9-5b418256419f"
+        name="CategoryItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="7b397184-b3f0-4576-a344-eff41d39b02c"
+            name="ParentCategory"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4fd39686-9c64-41fd-9b28-0b06d8f71917"
+        name="Parameter"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="a757619e-0db8-459c-894d-6e0978ffbae6"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="65083fdc-5ded-44b2-9aa5-569ef5220c85"
+            name="ParameterType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="cf0e2d49-b763-4b60-853d-4fa0a9a55d7a"
+            name="ParameterID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="178690c1-f20f-4c25-bc88-46879b8e5c31"
+        name="ParameterValue"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6c9778de-1063-4f97-91ba-9d2600679c7d"
+            isDerived="false"
+            sourceEndRoleName="ParameterValue"
+            targetEndRoleName="Parameter"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4fd39686-9c64-41fd-9b28-0b06d8f71917"
+              LastKnownName="Parameter"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7efb1de3-bf88-414b-8fa9-72ca2471e03d"
+                  name="ParameterValue"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="0d361fb1-3aea-4e66-813e-03d3a3943c90"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c81d4e4-db18-4475-ae26-244985d0128f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="252e46cd-5ed3-443e-8b20-7244dcae22be"
+                  name="Parameter"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="eea219ff-46f0-449a-86f9-d04ae8add184"
+            name="Value"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1f0dd9d4-a795-4f96-8395-af72cf43e6e9"
+            name="ParameterID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="70ebfadc-0fad-4af2-b44d-ec0977fa71d7"
+        name="CustomerSession"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="e1f45a30-c7e0-4890-9b3f-14ab31afe5c0"
+            isDerived="false"
+            sourceEndRoleName="CustomerSession"
+            targetEndRoleName="SelectedProduct"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="97f5cd13-aa2a-4053-923e-8918e0296b7f"
+              LastKnownName="SelectedProduct"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cffb62f-39b6-4958-a6c4-985b00b01721"
+                  name="CustomerSession"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eecb4de8-a346-4ccb-85f3-6477f59d02eb"
+                  name="SelectedProduct"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="06cd4706-e7d8-49a3-8645-6a35ea2ae3f1"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5b414fc2-0d6e-4c46-8b32-ffbc72fa1831"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="293c7c93-c54d-46fe-b686-187388eed966"
+            name="ID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ae5fb97c-0580-4cb0-a25d-79f8661f5171"
+                LastKnownName="Guid"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8026b030-2fb9-4941-8163-dade2ee4e0f8"
+            name="LastActivitiesTime"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="71beac94-f4d8-4d30-ba9c-c83cfc08c2e7"
+                LastKnownName="DateTime"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ae5fb97c-0580-4cb0-a25d-79f8661f5171"
+        name="Guid" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="97f5cd13-aa2a-4053-923e-8918e0296b7f"
+        name="SelectedProduct"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="4c430ed3-4c46-4469-b138-94876f7a749c"
+            isDerived="false"
+            sourceEndRoleName="SelectedProduct"
+            targetEndRoleName="Product"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1d74ff06-ff82-4d58-9a39-bccc7771ab32"
+              LastKnownName="Product"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7e7502b-ad7c-4de3-9372-f25b0b908bab"
+                  name="SelectedProduct"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eb393fa7-c3dd-4cb3-8006-4629ee8304a9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d21d935c-7152-4cf3-a54f-d806f4af1b31"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13943d0e-68c1-48b7-9b0d-db90b232b6be"
+                  name="Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0f5e4bef-9e33-4c7e-a367-d0598f89b57d"
+            name="ProductID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a2aa886f-2e2e-4ec5-9ab9-c48f207bc305"
+            name="Count"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a75377ba-a7d6-4dd3-b603-b75c5c8bda77"
+        name="Money" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="71beac94-f4d8-4d30-ba9c-c83cfc08c2e7"
+        name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ebdce229-0c7a-44f3-bf7e-9d14bd250bf0"
+        name="Order"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="718d4d41-5ecc-4361-9a5d-beaf8a20fe99"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="Contacts"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dbbeb221-9fb3-471b-9669-3a79e34c1773"
+              LastKnownName="Contacts"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e0baf18c-9f07-40e1-bf7c-c3397f6df37d"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c5dc149-ad7a-406b-bc16-a18909c57283"
+                  name="Contacts"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="dbb7f11d-ec2b-4a19-b9b3-d4eea32fedaa"
+            isDerived="false"
+            sourceEndRoleName="Order"
+            targetEndRoleName="SelectedProduct"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="97f5cd13-aa2a-4053-923e-8918e0296b7f"
+              LastKnownName="SelectedProduct"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efefdb82-834a-4d33-892f-4b18ced89d37"
+                  name="Order"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7e07536-af43-46d0-b053-167b0c7691b5"
+                  name="SelectedProduct"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dbbeb221-9fb3-471b-9669-3a79e34c1773"
+        name="Contacts"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="653f05a7-5994-46a3-bd3e-27718a648b1a"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e0faee74-42aa-411d-a9f8-43bf3a3387c7"
+            name="OtherInfo"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="4a35bdff-f233-4d7d-99d1-5bede7c06353"
+        name="Guest"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="fef169fd-8be6-4dfa-8286-ee5eeed3df99"
+            isDerived="false"
+            sourceEndRoleName="Guest"
+            targetEndRoleName="Просмотреть товары"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b11264f1-7037-4e3b-9e92-effd2a238a0e"
+              LastKnownName="Просмотреть товары"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2c5461e0-d1d8-49fa-a492-56b67ff56055"
+                  name="Guest"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a72ae24c-e77a-422b-8125-5044f9b922a7"
+                  name="Просмотреть товары"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="b5f5cf71-ba6b-459d-8a32-89294f42c51b"
+        name="Registered customer"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="cd0b7d7b-863b-462d-8623-91680adf6fb5"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="c202996f-06db-4d2b-a09a-0cc8c2f873bf"
+              LastKnownName="Сustomer"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2a45de48-1cb1-41c3-8cb2-864edc5608c1"
+            isDerived="false"
+            sourceEndRoleName="Registered customer"
+            targetEndRoleName="Войти в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f42367f8-5d2f-48e7-8791-1564485453d6"
+              LastKnownName="Войти в систему"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="649c5333-cd89-45a8-aaaa-b5ac2ae778f8"
+                  name="Registered customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da26095b-21f1-4836-8bec-412369d2ae09"
+                  name="Войти в систему"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb0ea33f-1f7f-44f6-a472-36fdd58f6b74"
+            isDerived="false"
+            sourceEndRoleName="Registered customer"
+            targetEndRoleName="Просмотреть историю заказов"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ab9f6732-66fd-426e-8621-19e14e700d18"
+              LastKnownName="Просмотреть историю заказов"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec6b4ff1-a64a-4233-bbad-6a0b71ce9bc4"
+                  name="Registered customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="855bae1a-e907-4ceb-ac83-e66756695fa8"
+                  name="Просмотреть историю заказов"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f42367f8-5d2f-48e7-8791-1564485453d6"
+        name="Войти в систему"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ab9f6732-66fd-426e-8621-19e14e700d18"
+        name="Просмотреть историю заказов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b5c17377-11e1-461c-9914-0486ffb6ce6c"
+        name="Зарегшистрироваться"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1f87ca3b-aa94-4e4a-aa93-11f89fc81ab4"
+        name="RegisteredСustomerAccount"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="39d380a7-dbfe-4759-9b26-815ca2670d4c"
+            isDerived="false"
+            sourceEndRoleName="RegisteredСustomerAccount"
+            targetEndRoleName="CustomerSession"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="70ebfadc-0fad-4af2-b44d-ec0977fa71d7"
+              LastKnownName="CustomerSession"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8d9fee4-1443-4ea2-96a9-f161d875e01b"
+                  name="RegisteredСustomerAccount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c6515585-08d0-460c-a2ab-f1172475cd96"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a6330e05-fecb-435e-b266-3faeec950df7"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1dc810ad-e913-453a-abcb-307484301527"
+                  name="CustomerSession"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d2b7dc8f-c144-4d92-a020-9f9750e55dda"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="be3f0099-3ba7-457e-9290-5645c2997809"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3076cd00-bf43-46a8-bbc8-f8db7d5eb8d2"
+            isDerived="false"
+            sourceEndRoleName="RegisteredСustomerAccount"
+            targetEndRoleName="Contacts"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="dbbeb221-9fb3-471b-9669-3a79e34c1773"
+              LastKnownName="Contacts"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7369c371-5629-4f06-ac36-bef3bf581803"
+                  name="RegisteredСustomerAccount"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="103b52b2-99f9-411a-9441-3cea7ae95fd9"
+                  name="Contacts"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5768cbb8-d08c-4d5f-a967-08d95b8e92f1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0bf19f72-5525-4495-929d-295812bb7865"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="46071d6f-a43c-49c6-a03e-5bbfa7a134cd"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b5dcde67-b50e-469d-ac4a-ebf4ca3f05f1"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d5f29958-bb47-4eb4-b2c5-c8082c27a24d"
+            name="SessionID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ae5fb97c-0580-4cb0-a25d-79f8661f5171"
+                LastKnownName="Guid"
+                LastKnownLocation="InternetShopModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
