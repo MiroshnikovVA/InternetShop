@@ -1,0 +1,763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="a6cfa369-eca4-46e2-a010-7fde0a31ef80"
+  name="InternetShopModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="571939ef-94a1-4dbe-b30e-e1eb6a302218">
+      <body>Покупатель после заказа получит сообщение на e-mail с ссылкой на страницу с описанием и статусом заказа</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="83017226-0b9a-466c-923b-2cf06c4ffc82"
+          LastKnownName="Просмотреть статус заказа"
+          LastKnownLocation="InternetShopModeling.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="c202996f-06db-4d2b-a09a-0cc8c2f873bf"
+        name="Сustomer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="5f4381d9-3e70-438e-86c4-b37998e9eee8"
+            isDerived="false"
+            sourceEndRoleName="Сustomer"
+            targetEndRoleName="Навигация по сайту"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b11264f1-7037-4e3b-9e92-effd2a238a0e"
+              LastKnownName="Просмотреть товары"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f6be0b1-851f-45e8-a5b7-3c5002cccb19"
+                  name="Сustomer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0e9af142-cf2a-43d6-b031-fda47527ce58"
+                  name="Навигация по сайту"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b811e2ce-a681-4fd0-bb0c-406b968446fc"
+            isDerived="false"
+            sourceEndRoleName="Сustomer"
+            targetEndRoleName="Совершение покупок"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1b050d57-5f90-4567-a70a-a16751fd75f4"
+              LastKnownName="Совершить покупку"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cacf58b-e5da-40d6-b3dd-0d193ad44203"
+                  name="Сustomer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="72b812c2-cbdc-4189-a1a2-e38bb8c58729"
+                  name="Совершение покупок"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="73d56b90-0596-4900-b8fd-29f0a73a9c6f"
+            isDerived="false"
+            sourceEndRoleName="Сustomer"
+            targetEndRoleName="Просмотреть статус заказ"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="83017226-0b9a-466c-923b-2cf06c4ffc82"
+              LastKnownName="Просмотреть статус заказа"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f5a667a-4912-4323-be67-dfd0537a431e"
+                  name="Сustomer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6c0476ab-e6bb-456b-913c-252dd00b3fba"
+                  name="Просмотреть статус заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="a1fb541e-e698-4119-8f44-6447efb6aa56"
+        name="Seller"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="8b94e0b2-7321-4462-b12a-504a4cb3f0ed"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="6ea9dfab-7cc1-4eaf-8bdd-eb8636cb6363"
+              LastKnownName="User"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="56b45bae-1465-4f70-b434-615e262687e9"
+            isDerived="false"
+            sourceEndRoleName="Seller"
+            targetEndRoleName="Редактировать контент"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="64331bb0-580d-4057-afcc-f169dc62257e"
+              LastKnownName="Редактировать контент"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="993c0426-bc1d-40be-b5b6-e699dce06bbd"
+                  name="Seller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bf19f717-6bec-4235-b160-b3b0ac7efb9e"
+                  name="Редактировать контент"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a44fc633-94b5-4629-8c4e-dd9e33c98541"
+            isDerived="false"
+            sourceEndRoleName="Seller"
+            targetEndRoleName="Просмотреть заказы"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="eecc3254-4932-49d2-a362-2c88dc0051a9"
+              LastKnownName="Работать с заказами"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f50a433c-98c2-4197-8c6c-1254c40ad816"
+                  name="Seller"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6ee3e80-6de1-441f-a394-84b02f4674b8"
+                  name="Просмотреть заказы"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e2b9ca61-a473-456e-b071-6e242a8f685d"
+        name="Manager"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4009ef44-dd54-4306-b340-261002357213"
+        name="Указать остатки товаров на складе"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d7601c9d-a181-4b05-8959-83844919d533"
+        name="Добавить товар"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1cc249d6-48cc-4c82-8aec-0aa54f10d7ce"
+        name="Положить товар в корзину"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dc425e4b-de2f-4225-b6a5-eb966cd1ecb9"
+        name="Оформить заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e30671c8-2c06-4529-a96f-6be904d96ac4"
+        name="Просмотреть категории товаров"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d964ad7-4262-4396-91b1-e810c809d90f"
+        name="Просмотреть описание товара"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="931b29e6-58bc-4441-b24d-1f3745c7ea7d"
+        name="Ввести почтовый ящие и личную информацию"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a77293dc-bbef-429c-b375-c5f6800e995d"
+        name="Удалить товар из корзины"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b11264f1-7037-4e3b-9e92-effd2a238a0e"
+        name="Просмотреть товары"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="4c16d7e3-b78a-4093-80ac-1a452e1a1bf1">
+            <useCaseMoniker
+              Id="e30671c8-2c06-4529-a96f-6be904d96ac4"
+              LastKnownName="Просмотреть категории товаров"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="1964d19d-0f74-4dd1-be4f-399f32e95791">
+            <useCaseMoniker
+              Id="8d964ad7-4262-4396-91b1-e810c809d90f"
+              LastKnownName="Просмотреть описание товара"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b050d57-5f90-4567-a70a-a16751fd75f4"
+        name="Совершить покупку"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a5d861b7-eec4-4104-8151-a1b8843caa50">
+            <useCaseMoniker
+              Id="a77293dc-bbef-429c-b375-c5f6800e995d"
+              LastKnownName="Удалить товар из корзины"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="c6259db1-d9ec-4897-81ff-3423353a2bd5">
+            <useCaseMoniker
+              Id="1cc249d6-48cc-4c82-8aec-0aa54f10d7ce"
+              LastKnownName="Положить товар в корзину"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="a0f51c96-480e-42cb-8594-2b17ab7c8567">
+            <useCaseMoniker
+              Id="dc425e4b-de2f-4225-b6a5-eb966cd1ecb9"
+              LastKnownName="Оформить заказ"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="83017226-0b9a-466c-923b-2cf06c4ffc82"
+        name="Просмотреть статус заказа"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5f65b556-ec3d-43e8-ba29-ba593eaa4cff"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="eecc3254-4932-49d2-a362-2c88dc0051a9"
+        name="Работать с заказами"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e5e494de-dc75-475d-8ae3-62594d5ee053">
+            <useCaseMoniker
+              Id="a92b14a9-7452-48db-bccf-41cab8700964"
+              LastKnownName="Редактировать статус заказа"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="9aa6b8a5-8362-438e-830b-fa75da9544de">
+            <useCaseMoniker
+              Id="8d5a87ac-e59b-4b6d-becb-8b0e8a17aaa5"
+              LastKnownName="Отменить заказ"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="0d67eee4-01c4-4feb-a7b3-e5f9e251b3c0">
+            <useCaseMoniker
+              Id="4cf8ab86-d554-405b-8564-0a7477d121ba"
+              LastKnownName="Указать заказ как выполненный"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="f4d47404-3f5c-4896-bb5a-34b573d2cd3e">
+            <useCaseMoniker
+              Id="0f529f2e-16ee-4c8c-a972-07227b49c99d"
+              LastKnownName="Просмотреть заказ"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="9f73e878-8f1a-466f-b838-82441be5ba88">
+            <useCaseMoniker
+              Id="435ffec3-5f42-4428-9e58-7068199884fd"
+              LastKnownName="Просмотреть список заказов"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="64331bb0-580d-4057-afcc-f169dc62257e"
+        name="Редактировать контент"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="6a248959-b379-4135-bddf-86826d11b30a">
+            <useCaseMoniker
+              Id="4009ef44-dd54-4306-b340-261002357213"
+              LastKnownName="Указать остатки товаров на складе"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="34aafbd7-a729-4070-adaf-79ffa0fe700f">
+            <useCaseMoniker
+              Id="d7601c9d-a181-4b05-8959-83844919d533"
+              LastKnownName="Добавить товар"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="8a72ab1e-d714-4d25-83fd-c176738456de">
+            <useCaseMoniker
+              Id="9eb2466a-e2ee-449f-875f-d797460b487b"
+              LastKnownName="Редактировать товар"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+          <include
+            Id="ab6e0d52-9f4b-4ebc-8a6e-062904b41078">
+            <useCaseMoniker
+              Id="921f972e-a07e-4c36-aab4-fec651bef068"
+              LastKnownName="Удалить товар"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9eb2466a-e2ee-449f-875f-d797460b487b"
+        name="Редактировать товар"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="921f972e-a07e-4c36-aab4-fec651bef068"
+        name="Удалить товар"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a92b14a9-7452-48db-bccf-41cab8700964"
+        name="Редактировать статус заказа"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d5a87ac-e59b-4b6d-becb-8b0e8a17aaa5"
+        name="Отменить заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4cf8ab86-d554-405b-8564-0a7477d121ba"
+        name="Указать заказ как выполненный"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="e278ec96-ba42-4d98-bd06-0aa51ef4d74e"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="487dd5ee-9253-4da3-83d3-cc9b73608542"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="6ea9dfab-7cc1-4eaf-8bdd-eb8636cb6363"
+              LastKnownName="User"
+              LastKnownLocation="InternetShopModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="24fc4bde-9774-490b-b1b0-3a58cd6be92c"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Добавить пользователя"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c451af9b-e924-4d75-88a9-7f4c43c38ebe"
+              LastKnownName="Добавить пользователя"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c4b6f46-081f-456a-ab86-ffbffb03b8f5"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0d594ff4-011b-4b0f-bfcd-f1ac1f3d6ab9"
+                  name="Добавить пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5ea4bd4b-d2d4-4ef0-b1af-d2e5048b884b"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Редактировать пользователя"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="30404502-f1d1-4218-9566-1e2bdd85de72"
+              LastKnownName="Редактировать пользователя"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cbc8c3f3-7c40-4fca-a610-3e25094ffb77"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0b23d109-fa8c-4603-9dfa-cc0167fd0475"
+                  name="Редактировать пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7e62d309-f04c-4d91-8cfd-7826a16cf0c3"
+            isDerived="false"
+            sourceEndRoleName="Administrator"
+            targetEndRoleName="Удалить пользователя"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="893cb982-69fa-4db6-a07c-f8a2a7b36317"
+              LastKnownName="Удалить пользователя"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7178d8ce-1cbc-4a7b-9c9e-51e546154f1f"
+                  name="Administrator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afd281e0-4e20-424d-a05f-75b07fdb920f"
+                  name="Удалить пользователя"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c451af9b-e924-4d75-88a9-7f4c43c38ebe"
+        name="Добавить пользователя"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f529f2e-16ee-4c8c-a972-07227b49c99d"
+        name="Просмотреть заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="435ffec3-5f42-4428-9e58-7068199884fd"
+        name="Просмотреть список заказов"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1062dfc7-60b8-49dc-af09-99554d413b5c"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6ea9dfab-7cc1-4eaf-8bdd-eb8636cb6363"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4c0e0761-facc-477e-8688-2cfc86f91166"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Войти в систему"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a9c846d5-41f7-4b99-83b4-ae547797ab6a"
+              LastKnownName="Войти в систему"
+              LastKnownLocation="InternetShopModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ced80ba5-9878-4a15-911c-e44270cb6af1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="864bc814-4318-4cdf-b0f3-21c17f9c3600"
+                  name="Войти в систему"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="30404502-f1d1-4218-9566-1e2bdd85de72"
+        name="Редактировать пользователя"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="893cb982-69fa-4db6-a07c-f8a2a7b36317"
+        name="Удалить пользователя"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a9c846d5-41f7-4b99-83b4-ae547797ab6a"
+        name="Войти в систему"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
